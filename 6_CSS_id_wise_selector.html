@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS id Selectors</title>
+    <style>
+        /* here we are using elements to apply style */
+        h3{
+            color: red;
+        }
+
+        /*                                    IMP NOTE                                            */
+        /* id should be unique for each element. we shoul not assign same id to multiple elements */
+        /* if we want to assign same style to multiple elements then instead of "id" we should use "class" */
+
+        /* this will get apply to elements whose id are "selectById" */
+        /* we have to use "#" to select "id" option */
+        #selectById{
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading..</h3>
+    <p>This is css selectors</p>
+    <p id="selectById">This is another paragraph. css selectors</p>
+    <div>
+        <p id="selectById">This is paragraph inside div. css selectors</p>       
+    </div>
+</body>
+</html>

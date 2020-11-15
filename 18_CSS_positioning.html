@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        /* positions in CSS: Static(default), Absolute, Relative, Fixed and Sticky. */
+        /*  1. relative: It chnages postion of element w.r.t its original position
+            
+            2. absolute: It changes position of element w.r.t its parent's position 
+            (in this case class="container" is a parent)
+
+            3. fixed: It make position of element fixed means if we scroll the webpage up-down the position of that element remain fixed. fixed element stay at fixed position throught the webpage even though its parent element get out of the screen view.
+
+            4. sticky: It is similar to "fixed" method. when we scrolldown it's parent element it goes out of the scree with its parent element.
+
+        */
+
+        .container{
+            border: 10px solid yellow;
+            /* height: 2000px; */
+        } 
+        .box{
+            display: inline-block;   /*bring all elements in one line*/
+            border:5px groove red;
+            width: 100px;
+            height: 50px;
+            margin:5px
+        }
+        #box1{
+            /* Note: To see working od this first change the height of container to very large value so we get scrollbar in webpage */
+            position: fixed;
+        }
+        #box2{
+            position: relative;
+            top: 10px;      /*it moves element by 10px from top*/
+            right: 10px;    /*it moves element by 10px from right*/
+        }
+        #box3{
+            position: absolute;
+            top: 100px;      /*it moves element by 100px from top w.r.t. parent */
+            left: 20px;    /*it moves element by 20px from left  w.r.t parent*/
+        }
+        #box4{
+            /* Note: To see working od this first change the height of container to very large value so we get scrollbar in webpage. add remove comment from the class="container2" block */
+            position:sticky;
+            top:50px;
+            right: 150px;
+        }
+
+        .container2{
+            border: 5px solid blue;
+            height:2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <!-- <div class="container2">
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+    </div> -->
+
+</body>
+</html>

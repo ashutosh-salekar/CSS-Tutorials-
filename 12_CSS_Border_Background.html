@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, Border and Background</title>
+    <style>
+        #para{
+            background-color: cyan;
+            height: 60px;  /* It will reflect change in height ang width of paragraph backgorund*/
+            width: 350px;
+
+            border-style:inset;
+            border-color: red;
+            border-width: 10px;
+            border-radius: 10px;  /* this will blunt the corners of the border*/
+        }
+        #para1{
+            background-color: cyan;
+            height: 60px;  /* It will reflect change in height ang width of paragraph backgorund*/
+            width: 350px;
+            
+            border-top: 10px solid violet; 
+            /*This is inline method of assigning border attributes like 
+            (size in pixel, style of border, colour of border)*/
+        
+            border-right: 15px solid green; /*border-bottom only implement bottom part of border. we can use same for top, left and bottom part*/
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="para">This is paragraph. <br>
+       Second line of paragraph. 
+    </p>
+    <br>
+    <p id="para1">This is second paragraph. <br>
+       Second line of paragraph. 
+    </p>
+
+
+</body>
+</html>

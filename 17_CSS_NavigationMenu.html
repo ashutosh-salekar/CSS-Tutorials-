@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        .navbar{
+            background-color: darkorange;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float: left;            /*To bring all elements of list to onle line arrange from left*/
+            list-style: none;       /*To remove bullet-points*/
+            margin: 30px 20px;
+        }
+
+        .navbar li a{
+            padding:3px;
+            text-decoration: none;      /*To remove underline of hyperlink text*/
+        }
+
+        .search{
+            float: right;
+            padding: 3px 4px;
+        }
+        
+        .navbar input{
+            float: right;
+            margin-top:25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Help</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+
+        </nav>
+
+    </header>
+</body>
+</html>

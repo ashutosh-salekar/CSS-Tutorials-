@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+
+        /* FlexBox is one-dimensional lauout method for laying out items in rows and columns */
+        
+        .container{
+            border: 5px groove red;
+            height: 350px;
+            
+            display: flex;
+            /* Initializing container as a flex box */
+
+            /* Flex properties for flex container */
+            flex-direction: column; 
+            /* It use to decide the direction of arrangement of items. Bydefault it is "row" */
+
+            flex-direction: row-reverse;
+            /* It start filling flex container from opposite direction. 
+            means:
+            for "row-reverse" it start filling from right and
+            for "column-reverse" it start filling from bottom */
+
+            flex-direction: row;  /* To make it bydefault*/
+
+            flex-wrap: wrap;  /*By-default value is "nowrap" */
+            /* It will help to wrap items when we shrink or expand the webpage */
+
+            justify-content: center;
+            /* It bring all items in the center */
+            justify-content: space-between;
+            /* add equal space between two items */
+            /* "justify-content:" has many values try them */
+
+            align-items: center;  
+            /* It aligns the items in the center */
+        }
+        .item{
+            background-color: tomato;
+            border: 3px groove green;
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+            padding: 2px;           
+        }
+
+    </style>
+</head>
+<body>
+    <h2>This is heading</h2>
+    <div class="container">
+        <div class="item" id="item1">First</div>
+        <div class="item" id="item2">Second</div>
+        <div class="item" id="item3">Third</div>
+        <div class="item" id="item4">Fourth</div>
+        <div class="item" id="item5">Fifth</div>
+        <div class="item" id="item6">Sixth</div>
+    </div>
+</body>
+</html>

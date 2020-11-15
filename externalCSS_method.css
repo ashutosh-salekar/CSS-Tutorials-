@@ -1,0 +1,13 @@
+
+/* this file gets called from 4_externalCSS_method.html file. */
+h1
+{
+    color: orange;
+    background-color: blue;
+}
+
+p
+{
+    color: green;
+    background-color:black;
+}

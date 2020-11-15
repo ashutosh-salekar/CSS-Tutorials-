@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        #box{
+            display:flex;
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            background-color: red;
+            justify-content: center;  /*bring all content in the middel of line*/
+            align-items: center;      /*bring all content in the middel of block*/  
+
+            /* appling transition property */
+            transition-property: background-color;
+            transition-duration:2s; /*It takes 1sec to make changes*/  
+        }
+        #box:hover{
+            background-color: yellow;
+        }
+        #box1{
+            display:flex;
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            background-color: green;
+            justify-content: center;  /*bring all content in the middel of line*/
+            align-items: center;      /*bring all content in the middel of block*/  
+            
+            /* appling transition property */
+            transition-property: all;
+            transition-duration:2s; /*It takes 1sec to make changes*/  
+        }
+        #box1:hover{
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <div class="container">
+        <div id="box">
+            <p>This is paragraph.</p>
+        </div>
+        <div id="box1">
+            <p>This is paragraph.</p>
+        </div>
+    </div>    
+</body>
+</html>

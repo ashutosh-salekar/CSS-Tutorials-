@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <!--                                       Box Model in css                                            -->
+    <!-- 
+                                              margin
+
+                                              border
+
+                                              padding
+
+                margin <- brder <- padding <- element -> padding -> border -> margin
+
+                                              padding
+
+                                              border
+
+                                              margin
+
+     -->
+     <style>
+         .container{
+            background-color:#81c1f3;
+            border: 7px solid hotpink;
+
+            /*Padding works inside the border according to box model*/
+            padding: 5px;    /*5px padding get attached from all sides inside a border*/
+
+            /*Margin works outside the border according to box model*/
+            margin: 10px;   /*5px margin get attached from all sides outside the border*/
+            
+            /* we can give both padding and margin from any one side only */
+
+            
+
+         }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>This is paragraph</p>
+    </div><br>
+    
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>This is paragraph</p>
+    </div><br>
+    
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>This is paragraph</p>
+    </div><br> 
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: cyan;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* NOTE: To easily understand it please run each style block below one by one, otherwise results of multilple blocks make you confuse.*/
+        
+        div p{
+            /* This will get apply to all "paragraphs" tag which are in the "div" tag.
+             It does not matter the depth of "p" insde "div" */
+            background-color: darkgray;
+            font-weight: bold;
+            text-align: center;
+        } 
+        div > p{
+            /* This will get apply to all "paragraphs" tag which are child of "div" tag. */
+            background-color:hotpink ;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div + p{
+            /* This will get apply to all "paragraphs" tag whose last sibling is "div" tag */
+            background-color:khaki;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading one</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is paragraph</p>
+        </div>
+        <p>This is outer paragraph</p>
+        <span><p>Paragraaph inside the span</p></span>
+        <p>This is outer paragraph 2</p>
+    </div>
+    <p>This is outer-most paragraph</p>
+
+    <div>
+        <p>This para 1</p>
+        <p>This para 2</p>
+        <ul>
+            <li class="item"><p>This para is inside li-> ul-> div</p></li>
+        </ul>
+    </div>
+
+</body>
+</html>

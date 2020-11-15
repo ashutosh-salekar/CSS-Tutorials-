@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frames and Animation</title>
+    <style>
+        .container{
+            background-color: palegreen;
+        }
+        .box{
+            background-color: orangered;
+            width: 250px;
+            height: 250px;
+
+            /* Animation feature is very vast, try and apply */
+            /* Adding Animation to webpage */
+            animation-name: ani1;       /*This is name of animaton we want to add*/
+            animation-duration: 1.5s;     /*This is duration for one iteration*/
+            animation-iteration-count: infinite;        /*Number of iteration*/
+        }
+        @keyframes ani1{
+            from{
+                width:400px;
+            }
+            to{
+                width:800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>This is a paragraph</p>
+        </div>
+    </div>
+</body>
+</html>

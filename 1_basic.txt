@@ -1,0 +1,24 @@
+CSS syntax:
+    <selector> {<property : <value>;}
+
+    selector = To select whose property we gonna change
+    property = which property we gonna change
+    value = value to be assign
+
+Eg:
+    header, p.intro {
+                        background-color : red;
+                        border-radius : 3px;
+                    }
+
+
+   note : p.intro means paragrapgh whose id is "intro"
+
+Ways to add CSS to HTML
+
+1. inline CSS : CSS is added to elements in HTML code/file by using <style> attribute.
+
+2. internal CSS : CSS is kept inside the head tag in <style> tag in HTML code/file.
+
+3. external CSS : CSS is kept separately inside a .CSS file.
+

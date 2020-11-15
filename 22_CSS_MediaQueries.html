@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 35px;
+            text-align: center;
+            background-color: red;
+            display: none;
+        }
+        @media (max-width:300px) {
+            /* It will execute body when screen size is inbetween 0-300px  */
+            #box1{
+                display: block; 
+                /* It will enable "id=box1" */
+                background-color: red;
+            }
+        }
+        @media (min-width: 300px) and (max-width:600px) {
+            /* It will execute body when screen size is inbetween 300-600px  */
+
+            #box2{
+                display: block;
+                /* It will enable "id=box2" */
+                background-color:green;
+            }
+        }
+        @media (min-width: 600px) and (max-width:950px) {
+            /* It will execute body when screen size is inbetween 600-950px  */
+            #box3{
+                display: block;
+                /* It will enable "id=box3" */
+
+                background-color: blue;
+            }
+        }
+        @media (min-width: 950px) {
+            /* It will execute body when screen size is greater that950px  */
+            #box4{
+                display: block;
+                /* It will enable "id=box4" */
+                background-color: yellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Media queries is one of the method to achieve responsive websites -->
+    <!-- it is used to insert some specific CSS if screen size is resized -->
+    <div class="box" id="box1">I am a iphone</div>
+    <div class="box" id="box2">I am a Tablet</div>
+    <div class="box" id="box3">I am a Desktop</div>
+    <div class="box" id="box4">I am a Wide-Screen</div>
+</body>
+</html>
